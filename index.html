@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer Clock Y</title>
+    <script src="script.js"></script>
+    <link rel="manifest" href="manifest.json"/>
+    <link rel="apple-touch-icon" href="icons/icons8-alarm-48.png" />
+    <link rel="icon" href="icons/icons8-alarm-48.png" />
+    <link rel="apple-touch-icon" href="icons/icons8-alarm-96.png" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <noscript>Enable JS to use this Page</noscript>
+
+    <div id="inputForm">
+        <form action="#internal-hook#addTimer">
+            <label for="nameOfTimer" class="noselect">Name of Timer:</label>
+            <input name="nameOfTimer" type="text" title="Name of Timer" minlength="1" />
+            <div class="ts">
+                <label class="rsz">Time:</label>
+                <input type="number" min="0" max="99" placeholder="H" title="Hour">:
+                <input type="number" min="0" max="60" placeholder="min" title="Minutes">:
+                <input type="number" min="0" max="60" placeholder="sec" title="Seconds">
+            </div>
+            <button type="submit" class="noselect add">Add</button>
+        </form>
+    </div>
+
+    <hr>
+
+    <div id="clockspawn"></div>
+
+    <p class="copy">&copy; Sharkbyteprojects</p>
+</body>
+</html>

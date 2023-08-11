@@ -1,0 +1,73 @@
+noscript {
+    color: red;
+}
+
+#clockspawn .timerBody {
+    border: 3px solid #dd0606;
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+}
+
+.add {
+    background-color: #1d4203;
+}
+
+.destroy {
+    background-color: #940303;
+}
+
+button, input {
+    border-radius: 10px;
+}
+
+button {
+    border-style: none;
+}
+
+.add, .destroy{
+    color: var(--fg)
+}
+
+input, button, .rsz {
+    line-height: 2;
+}
+
+div.ts {
+    display: flex;
+    justify-content: center;
+}
+
+input[name="nameOfTimer"], div.ts, button {
+    width: 100%;
+}
+
+input[type="number"] {
+    text-align: right;
+    width: 2.2rem;
+}
+
+p.copy {
+    text-align: center;
+}
+
+* {
+    --appcolor: #66f109;
+    --fg: #dddddd;
+    --bg: #1a1a1a;
+}
+
+body, input {
+    background-color: var(--bg);
+    color: var(--fg);
+}
+
+.noselect, .copy {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+  }

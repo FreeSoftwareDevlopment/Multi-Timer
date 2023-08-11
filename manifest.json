@@ -1,0 +1,20 @@
+{
+  "name": "Multi Alarm",
+  "short_name": "MultiAlarm",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#1a1a1a",
+  "theme_color": "#66f109",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "icons/icons8-alarm-48.png",
+      "type": "image/png", "sizes": "48x48"
+    },
+    {
+      "src": "icons/icons8-alarm-96.png",
+      "type": "image/png", "sizes": "96x96"
+    }
+  ]
+}
+  
