@@ -88,7 +88,7 @@ document.addEventListener("DOMContentLoaded", (ev) => {
                 ti.docTree.time.innerText = "Timer ended";
                 if(window.navigator.vibrate&&ti.vibr){
                     try{
-                        window.navigator.vibrate([300, 200, 300, 200]);
+                        window.navigator.vibrate(3000);
                     }catch(e){
                         console.warn("Vibration not working...");
                     }
