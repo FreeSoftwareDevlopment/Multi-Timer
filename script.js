@@ -86,12 +86,13 @@ document.addEventListener("DOMContentLoaded", (ev) => {
             let t = ti.finishTime - snap;
             if(t < 0) {
                 ti.docTree.time.innerText = "Timer ended";
-                if(window.navigator.vibrate){
+                if(window.navigator.vibrate&&ti.vibr){
                     try{
-                        window.navigator.vibrate(100);
+                        window.navigator.vibrate([300, 200, 300, 200]);
                     }catch(e){
                         console.warn("Vibration not working...");
                     }
+                    ti.vibr = true;
                 }
             } else {
                 ti.docTree.time.innerText = `${renderTime(t)}/${renderTime(ti.interval)}`;
